@@ -1,1 +1,1 @@
-# javascript
+# JavaScript Style Guide
