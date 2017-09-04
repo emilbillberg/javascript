@@ -63,6 +63,15 @@ const good = [];
 const good = [...array];
 ```
 
+3.  Use Array.prototype.push instead of direct assignment to add items to an array.
+```javascript
+let array = [1, 2, 3]
+
+array[array.length] = 4
+
+array.push(5);
+```
+
 ## Strings
 1. Use single quotes '' for strings.
 ```javascript
@@ -76,6 +85,33 @@ const name = 'Batman';
 const bad = 'Hello ' + name + '! How are you?';
 
 const good = `Hello ${name}! How are you?`;
+```
+
+## Functions
+1. Use default parameter syntax rather than mutating function arguments.
+```javascript
+
+function bad(opts) {
+  opts = opts || {}
+}
+
+function good(opts = {}) {
+  // do your stuff
+}
+```
+
+2. Never reassign parameters.
+```javascript
+
+function bad(a) {
+  a = 1;
+  // ...
+}
+
+function good(a) {
+  const b = a || 1;
+  // ...
+}
 ```
 
 
