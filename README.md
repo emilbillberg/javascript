@@ -96,7 +96,7 @@ function bad(opts) {
 }
 
 function good(opts = {}) {
-  // do your stuff
+  //...
 }
 ```
 
@@ -105,12 +105,12 @@ function good(opts = {}) {
 
 function bad(a) {
   a = 1;
-  // ...
+  //...
 }
 
 function good(a) {
   const b = a || 1;
-  // ...
+  //...
 }
 ```
 
